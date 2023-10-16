@@ -1,0 +1,71 @@
+<body>
+
+    <section class="nyheter">
+        <a href="#" class="seks-kolonner-to-rader">
+            <img src="Bilder/restaurant-at-night.jpg">
+        <h1>Velkommen til 123 Hotellet!</h1> </a>
+    
+        <a href="#" class="fire-kolonner">
+            <img src="Bilder/hotel-room-1552638155SB1.jpg">
+            <h1>Book hotellrom</h1></a>
+    
+        <a href="#" class="tre-kolonner">
+            <img src="Bilder/1-1220979020IYZa.jpg">
+        <h1>Restaurant åpen fra 07.00 til 22.00</h1> </a>
+    
+        <a href="#" class="tre-kolonner">
+            <img src="Bilder/utsiden på hotellet.jpg">
+            <h1>Les mer om vår historie</h1> </a>
+    
+        <a href="#" class="tre-kolonner">
+            <h1>Meny: <br>
+                Fiskepinner <br>
+                Kjøttkaker <br>
+                Banan <br>
+                Pizza <br>
+                Kebab
+    
+            </h1> </a>
+    
+    
+    
+    </section>
+        
+    </body>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        .nyheter {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            max-width: 80rem;
+            grid-auto-rows: minmax(12rem, auto);
+            gap: 1rem;
+        }
+        .nyheter a {
+            background-color: aliceblue;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            position: relative;
+        }
+        .nyheter h1 {
+            position: absolute;
+            color: blue;
+        }
+        .nyheter img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+    
+        }
+        .tre-kolonner {grid-column: span 3;}
+        .fire-kolonner{grid-column: span 3;}
+        .seks-kolonner-to-rader{grid-column: span 9; grid-row: span 3; }
+    </style>
